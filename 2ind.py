@@ -14,6 +14,7 @@ if __name__ == "__main__":
                 with open(item, "r", encoding="utf-8") as fileptr:
                     text = str(fileptr.readlines())
                     print(text)
+                    fileptr.close()
         else:
             print("Команда введена без аргументов", file=sys.stderr)
     else:
