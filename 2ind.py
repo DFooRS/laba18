@@ -13,7 +13,7 @@ if __name__ == "__main__":
             for i, item in enumerate(file_list):
                 with open(item, "r", encoding="utf-8") as fileptr:
                     text = str(fileptr.readlines())
-                    print(text)
+                print(text)
         else:
             print("Команда введена без аргументов", file=sys.stderr)
     else:

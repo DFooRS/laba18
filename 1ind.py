@@ -4,9 +4,9 @@
 
 if __name__ == "__main__":
     with open("TextInd1.txt", "r", encoding="utf-8") as fileptr:
-        sentences = str(fileptr.readlines())
+        ftext = fileptr.readlines()
 
-    sentences = sentences[2:(len(sentences)-2)]
+    sentences = ','.join(ftext)
     parts = sentences.split('. ')
     other_sent = ""
     for i, item in enumerate(parts):
